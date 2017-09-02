@@ -1,0 +1,24 @@
+# Pruebas de la clase Calculadora
+# Archivo: calculadora.py
+# Función: sumar
+
+>>> from calculadora import Calculadora
+>>> calculadora = Calculadora()
+
+>>> calculadora.sumar(2, 2)
+4
+
+>>> calculadora.sumar(3, 3)
+6
+
+>>> calculadora.sumar(-1, 2)
+1
+
+>>> calculadora.sumar(0, 2)
+2
+
+>>> calculadora.sumar ('a', 1)
+'Datos inválidos'
+
+>>> calculadora.sumar (1, 'a')
+'Datos inválidos'

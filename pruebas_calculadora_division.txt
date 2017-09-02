@@ -1,0 +1,36 @@
+# Pruebas de la clase Calculadora
+# Archivo: calculadora.py
+# Función: dividir
+
+>>> from calculadora import Calculadora
+>>> calculadora = Calculadora()
+
+>>> calculadora.dividir(4, 2)
+2.0
+
+>>> calculadora.dividir(3, 3)
+1.0
+
+>>> calculadora.dividir(3, 4)
+0.75
+
+>>> calculadora.dividir(-3, 4)
+-0.75
+
+>>> calculadora.dividir(3, -4)
+-0.75
+
+>>> calculadora.dividir(-3, -4)
+0.75
+
+>>> calculadora.dividir(0, 2)
+0.0
+
+>>> calculadora.dividir(2, 0)
+'No se permiten divisiones entre 0'
+
+>>> calculadora.dividir ('a', 1)
+'Datos inválidos'
+
+>>> calculadora.dividir (1, 'a')
+'Datos inválidos'

@@ -1,0 +1,25 @@
+# Pruebas de la clase Calculadora
+# Archivo: calculadora.py
+# Función: restar
+
+
+>>> from calculadora import Calculadora
+>>> calculadora = Calculadora()
+
+>>> calculadora.restar(2, 2)
+0
+
+>>> calculadora.restar(3, 1)
+2
+
+>>> calculadora.restar(-1, 2)
+-3
+
+>>> calculadora.restar(0, -2)
+2
+
+>>> calculadora.restar ('a', 1)
+'Datos inválidos'
+
+>>> calculadora.restar (1, 'a')
+'Datos inválidos'

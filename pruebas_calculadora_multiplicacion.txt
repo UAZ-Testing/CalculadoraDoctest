@@ -1,0 +1,30 @@
+# Pruebas de la clase Calculadora
+# Archivo: calculadora.py
+# Función: multiplicar
+
+>>> from calculadora import Calculadora
+>>> calculadora = Calculadora()
+
+>>> calculadora.multiplicar(2, 2)
+4
+
+>>> calculadora.multiplicar(3, 3)
+9
+
+>>> calculadora.multiplicar(-3, 4)
+-12
+
+>>> calculadora.multiplicar(3, -4)
+-12
+
+>>> calculadora.multiplicar(-3, -4)
+12
+
+>>> calculadora.multiplicar(0, 2)
+0
+
+>>> calculadora.multiplicar ('a', 1)
+'Datos inválidos'
+
+>>> calculadora.multiplicar (1, 'a')
+'Datos inválidos'
