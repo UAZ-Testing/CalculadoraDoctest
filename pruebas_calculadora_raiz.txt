@@ -1,0 +1,22 @@
+# Pruebas de la clase Calculadora
+# Archivo: calculadora.py
+# Función: raiz
+
+
+>>> from calculadora import Calculadora
+>>> calculadora = Calculadora()
+
+>>> calculadora.raiz(2)
+1.4142135623730951
+
+>>> calculadora.raiz(9)
+3.0
+
+>>> calculadora.raiz(-5)
+'No se permiten números negativos'
+
+>>> calculadora.raiz(7)
+2.6457513110645907
+
+>>> calculadora.raiz('a')
+'Datos inválidos'

@@ -1,4 +1,6 @@
 # coding=utf-8
+import math
+
 
 class Calculadora:
     def sumar(self, num1, num2):
@@ -28,5 +30,20 @@ class Calculadora:
         else:
             return 'Datos inválidos'
 
-    def validar_tipo_datos(self, num1, num2):
+    def raiz(self, num):
+        if self.validar_tipo_datos(num):
+            try:
+                return math.sqrt(num)
+            except ValueError:
+                return 'No se permiten números negativos'
+        else:
+            return 'Datos inválidos'
+
+    def potencia(self, num1, potencia):
+        if self.validar_tipo_datos(num1, potencia):
+            return num1 ** potencia
+        else:
+            return 'Datos inválidos'
+
+    def validar_tipo_datos(self, num1, num2=0):
         return isinstance(num1, (int, float)) and isinstance(num2, (int, float))

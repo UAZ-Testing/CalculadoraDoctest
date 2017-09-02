@@ -1,0 +1,25 @@
+# Pruebas de la clase Calculadora
+# Archivo: calculadora.py
+# Función: potencia
+
+
+>>> from calculadora import Calculadora
+>>> calculadora = Calculadora()
+
+>>> calculadora.potencia(2, 3)
+8
+
+>>> calculadora.potencia(9, 2)
+81
+
+>>> calculadora.potencia(-5, 2)
+25
+
+>>> calculadora.potencia(7, -2)
+0.02040816326530612
+
+>>> calculadora.potencia('a', 3)
+'Datos inválidos'
+
+>>> calculadora.potencia(3, 'a')
+'Datos inválidos'
